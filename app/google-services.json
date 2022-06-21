@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "634883324918",
+    "firebase_url": "https://socialappvu-default-rtdb.firebaseio.com",
+    "project_id": "socialappvu",
+    "storage_bucket": "socialappvu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634883324918:android:f65f664a3c8becf506a5d7",
+        "android_client_info": {
+          "package_name": "com.myvuapp.socialappandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634883324918-8m57dtvb8rkvdivm815qefjanf9hjvtb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myvuapp.socialappandroid",
+            "certificate_hash": "b9dd6223cfe1c5f1e0db71428a7e48ee2cb22de8"
+          }
+        },
+        {
+          "client_id": "634883324918-gklv0lf487skl2va4va1cumsepblf1l1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArZRwah8eaNw4LIpyiBNQ05FB_ZrhLhmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634883324918-gklv0lf487skl2va4va1cumsepblf1l1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

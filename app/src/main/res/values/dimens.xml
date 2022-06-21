@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="phone_padding">@dimen/_12sdp</dimen>
+    <dimen name="tab_padding">@dimen/_25sdp</dimen>
+    <dimen name="low_padding">@dimen/_4sdp</dimen>
+    <dimen name="low_normal_padding">@dimen/_8sdp</dimen>
+    <dimen name="text_v_large">22sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_normal">17sp</dimen>
+    <dimen name="text_small">15dp</dimen>
+    <dimen name="text_v_small">12dp</dimen>
+    <dimen name="text_vVVV_small">10dp</dimen>
+    <dimen name="text_v_v_small">9dp</dimen>
+    <dimen name="edt_height_small">@dimen/_30sdp</dimen>
+    <dimen name="edt_height_v_small">@dimen/_25sdp</dimen>
+
+    <dimen name="messages_list_h">@dimen/_60sdp</dimen>
+    <dimen name="messages_list_item_imv_h_w">@dimen/_45sdp</dimen>
+    <dimen name="messages_list_view_line_h">@dimen/_1sdp</dimen>
+    <dimen name="fav_imv_h_w">@dimen/_20sdp</dimen>
+</resources>

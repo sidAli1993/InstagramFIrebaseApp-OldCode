@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relavchat_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/phone_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Mirza Ali"
+                android:id="@+id/tvname"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_normal" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/relavchat_head"
+            android:background="@color/gray" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_chat"
+            android:layout_below="@id/relavchat_head"
+            android:layout_above="@id/relavchat_bottom"
+            android:layout_marginTop="@dimen/low_normal_padding" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relavchat_bottom"
+            android:layout_alignParentBottom="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/imv_msg_send"
+                android:backgroundTint="@color/white"
+                android:hint="your message..."
+                android:id="@+id/edt_chat_msg"
+                android:paddingLeft="@dimen/low_normal_padding"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/imv_msg_send"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edt_height_small"
+                android:layout_alignParentRight="true"
+                android:background="@color/light_orange"
+                android:padding="@dimen/low_padding"
+                android:src="@drawable/ic_baseline_send_24" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DonorName"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorDarkOrange"
+            android:gravity="center"
+            android:textSize="@dimen/text_v_large"
+            android:layout_marginRight="@dimen/low_normal_padding"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DonorName"
+            android:id="@+id/tvdonorname"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorDarkOrange"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_v_large"
+            android:layout_marginRight="@dimen/low_normal_padding"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/tvbookname1"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NGO Name"
+            android:id="@+id/tvngoname"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/black"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:id="@+id/tvaddress"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/black"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone No"
+            android:id="@+id/tvphone"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Price"
+            android:id="@+id/tvprice1"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorDarkOrange"
+            android:textSize="@dimen/text_normal"
+            android:layout_marginRight="@dimen/low_normal_padding"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDarkOrange"
+        android:layout_marginTop="@dimen/low_normal_padding"/>
+</LinearLayout>

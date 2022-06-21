@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.myvuapp.Checkout">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:paddingTop="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <ImageView
+            android:id="@+id/register_back_to_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/title_add"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:gravity="center"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingStart="8dp"
+        android:layout_marginTop="@dimen/phone_padding"
+        android:layout_marginBottom="@dimen/phone_padding"
+        android:paddingEnd="8dp">
+        <TextView
+            android:id="@+id/tvsaletype"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:text="Sale type: "
+            android:maxLines="1"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/dark_orange" />
+        <TextView
+            android:id="@+id/tvsellercity"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:text="Seller City: "
+            android:maxLines="1"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/dark_orange" />
+        <TextView
+            android:id="@+id/tvbookname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:text="Name: Abc name"
+            android:maxLines="1"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorLightGreen" />
+        <TextView
+            android:id="@+id/tvauthorname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:text="Author name: asdasdasd"
+            android:maxLines="1"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorLightGreen" />
+        <TextView
+            android:id="@+id/tvprice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:text="Price"
+            android:maxLines="1"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorLightGreen"
+            />
+        <EditText
+            android:id="@+id/edtphone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:hint="Phone"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/edit_text_normal"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorLightGreen"
+            android:autofillHints=""
+            android:inputType="phone" />
+        <EditText
+            android:id="@+id/edtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:hint="Address"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/edit_text_normal"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorLightGreen"
+            android:autofillHints=""
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/edtcity"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:hint="City"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/edit_text_normal"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorLightGreen"
+            android:autofillHints=""
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/linearngo"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select NGO you want to donate.."/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height_small"
+                android:id="@+id/spinnerngo"/>
+            <TextView
+                android:id="@+id/tvrelevantpersonname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:maxLines="1"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/colorLightGreen"
+                />
+            <TextView
+                android:id="@+id/tvaccountno"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:maxLines="1"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/colorLightGreen"
+                />
+            <TextView
+                android:id="@+id/tvbankname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:maxLines="1"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/colorLightGreen"
+                />
+            <TextView
+                android:id="@+id/tvngophone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:maxLines="1"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/colorLightGreen"
+                />
+            <TextView
+                android:id="@+id/tvngoaddress"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:maxLines="1"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/colorLightGreen"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btncheckout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:text="Checkout"
+            android:background="@drawable/take_photo_ok_button"
+            android:fontFamily="@font/montserrat_bold" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+</LinearLayout>

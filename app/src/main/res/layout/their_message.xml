@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/low_padding">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.jackandphantom.circularimageview.CircleImage
+            android:layout_width="@dimen/fav_imv_h_w"
+            android:layout_height="@dimen/fav_imv_h_w"
+            android:src="@drawable/ic_tempura"
+            android:layout_alignBottom="@id/tv_list_item_their_msg"
+            android:id="@+id/imv_list_item_their_msg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edt_height_small"
+            android:text="Hi Hello how are you"
+            android:textColor="@color/black"
+            android:id="@+id/tv_list_item_their_msg"
+            android:layout_marginLeft="@dimen/low_padding"
+            android:layout_toRightOf="@id/imv_list_item_their_msg"
+            android:padding="@dimen/low_padding"
+            android:textSize="@dimen/text_small"
+            android:background="@drawable/box_msg_recieved"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_list_item_their_msg_date"
+            android:layout_toRightOf="@id/tv_list_item_their_msg"
+            android:textSize="@dimen/text_v_small"
+            android:layout_marginLeft="@dimen/low_normal_padding"
+            android:textColor="@color/gray"
+            android:text="Yesterday"/>
+    </RelativeLayout>
+    </RelativeLayout>
